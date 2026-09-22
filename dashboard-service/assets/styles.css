@@ -1,0 +1,89 @@
+/**
+ * Copyright IBM Corp. 2018, 2023
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
+/*
+  blue (light to dark)
+  
+  #2563eb
+  #1e40af
+  #1e3a8a
+  #172554
+  #0f172a
+
+  #7c8797
+  
+  lightest blue #f9ebf2
+*/
+s
+body {
+  background: #2563eb;
+  background: -moz-linear-gradient(-45deg, #2563eb 0%, #1e3a8a 100%);
+  background: -webkit-linear-gradient(-45deg, #2563eb 0%,#1e3a8a 100%);
+  background: linear-gradient(135deg, #2563eb 0% ,#1e3a8a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2563eb', endColorstr='#1e3a8a',GradientType=1 ); 
+  margin: 0;
+  padding: 1em;
+}
+
+body,
+p {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+h1 {
+  color: #f9ebf2;
+  font-weight: normal;
+}
+
+#line {
+  border-bottom: 10px solid #771944;
+  width: 4em;
+}
+
+#count {
+  font-size: 15em;
+  font-weight: bold;
+  text-align: right;
+  color: #fff;
+}
+
+#hostname {
+  color: #f9ebf2;
+  text-align: right;
+  font-family: monospace;
+}
+
+#connection-status {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  color: white;
+  border-radius: 0.2em;
+  padding: 0.2em 0.5em;
+  text-align: right;
+  background-color: red;
+}
+
+.connected {
+  background-color: green !important;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  #count {
+    font-size: 8em;
+  }
+}
